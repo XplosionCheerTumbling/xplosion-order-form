@@ -17,12 +17,14 @@
     button:hover { background: #0056b3; }
     .size-note { font-size: 0.9em; color: #666; margin-top: 5px; }
     .chart { font-size: 0.85em; background: #f9f9f9; padding: 15px; border-radius: 4px; margin: 10px 0; }
+    .notice { background: #fff3cd; border: 1px solid #ffeaa7; color: #856404; padding: 12px; border-radius: 4px; margin: 15px 0; text-align: center; }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Xplosion Order Form</h1>
     <p style="text-align:center;">Order custom baseball jerseys and jackets. All measurements in centimeters (CM). Allow 1-3 cm variance.</p>
+    <div class="notice"><strong>Mock-ups are coming soon!</strong> We’ll share design previews before production.</div>
 
     <form name="xplosion-order" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
       <input type="hidden" name="form-name" value="xplosion-order">
@@ -63,6 +65,7 @@
 
       <div id="jersey-section" class="section hidden">
         <h2>Jersey Details</h2>
+        <p style="margin-top:-10px; color:#555;"><strong>Jerseys can be customized with name and number.</strong></p>
         <label>Jersey Size *</label>
         <select name="jersey_size" id="jersey_size">
           <option value="">-- Select Size --</option>
@@ -96,10 +99,10 @@
         <input type="text" name="jersey_color" placeholder="e.g. Black, Royal Blue, Red">
 
         <label>Name on Jersey</label>
-        <input type="text" name="jersey_name">
+        <input type="text" name="jersey_name" placeholder="Name to be printed">
 
         <label>Number on Jersey</label>
-        <input type="text" name="jersey_number">
+        <input type="text" name="jersey_number" placeholder="Number to be printed">
 
         <label>Additional Jersey Notes</label>
         <textarea name="jersey_notes" rows="2"></textarea>
